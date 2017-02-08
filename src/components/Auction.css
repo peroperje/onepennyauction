@@ -1,0 +1,15 @@
+.Auction .imageHolder {
+    height: 210px;
+}
+.Auction.bidEffect {
+    opacity: 0.5;
+}
+.Auction-logo {
+    animation: Auction-logo-spin infinite 1s linear;
+    height: 26px;
+}
+
+@keyframes Auction-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
