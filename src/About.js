@@ -3,10 +3,15 @@
  */
 import React, {Component} from 'react';
 
+
+
 class About extends Component {
     render(){
+        console.log(ReadME);
         return (
-            <div>Ajde</div>
+            <div>
+                <h1>About</h1>
+            </div>
         );
     }
 }
