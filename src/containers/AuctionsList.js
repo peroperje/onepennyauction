@@ -9,6 +9,8 @@ import {getRule} from '../selectors/auction'
 import {getUserByID} from '../selectors/users'
 import {browserHistory} from 'react-router';
 
+import './AuctionList.css'
+
 class AuctionsList extends Component {
 
 
@@ -24,7 +26,7 @@ class AuctionsList extends Component {
     render() {
         const {auctions, rules, cUser, users} = this.props;
         return (
-            <div className="row">
+            <div className="row AuctionList">
                 {
                     auctions.map((auction, i) => {
                         const rule = getRule()(rules, auction.ruleID);
