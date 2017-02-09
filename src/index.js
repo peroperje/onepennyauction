@@ -15,13 +15,12 @@ import initState from './store/initialState';
 import {makeBid} from './actions'
 
 const intSatet = initState();
-let store = configureStore(intSatet);
+let store = configureStore(intSatet,process.env.NODE_ENV ==='production');
 
 const autoBid = (store)=>{
     const {auctions,users,rules} = store.getState();
     auctions.forEach((a)=>{
         let  bidder = users[Math.floor(Math.random()*users.length)];
-        console.log(bidder)
         let actionRule = rules.find(r=>r.ruleID === a.ruleID);
 
         store.dispatch(

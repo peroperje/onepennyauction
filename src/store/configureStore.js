@@ -6,6 +6,7 @@ import rootReducer from '../reducers'
 
 export default function configureStore(preloadedState,isServer=false) {
     let store = {};
+
     if(!isServer){
         const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
         /* const store = createStore(reducer, preloadedState, composeEnhancers(
@@ -20,7 +21,7 @@ export default function configureStore(preloadedState,isServer=false) {
          store = createStore(
             rootReducer,
             preloadedState,
-            applyMiddleware(thunkMiddleware, createLogger(),bidder)
+            applyMiddleware(thunkMiddleware,bidder)
         )
     }
 
