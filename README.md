@@ -3,7 +3,20 @@
 PikPuj is a simulation of one penny auction web app. It is a simple, server-less, front-end app based on the react/redux.
 It's a study of react / redux and additional libaries.
  
-## Would you like to see how it looks?
+### Demo
+https://pikpuj.firebaseapp.com/
+
+## Install locally
+You have to have installed node.js and npm or yarn
+    
+```
+   git clone https://github.com/peroperje/onepennyauction.git
+   cd onepennyauction
+   yarn install
+   yarn start
+```
+
+
 
 
 
